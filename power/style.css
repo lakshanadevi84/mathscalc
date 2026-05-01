@@ -1,0 +1,96 @@
+body{
+margin:0;
+font-family:Arial;
+overflow:hidden;
+}
+
+/* SPLASH */
+#splash{
+position:fixed;
+width:100%;
+height:100vh;
+background:linear-gradient(to right,#667eea,#764ba2);
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:45px;
+opacity:1;
+transition:opacity 1.5s ease;
+z-index:10;
+}
+
+/* PAGE */
+.page{
+display:none;
+height:100vh;
+padding:20px;
+text-align:center;
+}
+.active{display:block;}
+
+/* INPUT */
+input,textarea{
+display:block;
+margin:15px auto;
+padding:15px;
+width:80%;
+max-width:400px;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+/* BUTTON */
+button{
+padding:12px 20px;
+margin:10px;
+border:none;
+border-radius:10px;
+background:#667eea;
+color:white;
+cursor:pointer;
+}
+
+/* OUTPUT GRID */
+#boxes{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+width:100%;
+height:65vh;
+}
+
+/* BOX */
+.box{
+padding:15px;
+border-radius:15px;
+font-size:15px;
+background:linear-gradient(to right,#fbc2eb,#a6c1ee);
+animation:pop 0.4s forwards;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+/* POP ANIMATION */
+@keyframes pop{
+from{opacity:0;transform:scale(0.8);}
+to{opacity:1;transform:scale(1);}
+}
+
+/* FINAL PAGE */
+#finalPage{
+display:none;
+position:fixed;
+width:100%;
+height:100vh;
+background:linear-gradient(to right,#ff9a9e,#fad0c4);
+color:black;
+padding:30px;
+}
+
+/* FINAL TEXT */
+.finalText{
+font-size:18px;
+margin:10px 0;
+}

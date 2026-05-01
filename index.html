@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Runge Kutta Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="splash">
+    <h1>Runge Kutta Calculator</h1>
+</div>
+
+<div id="inputPage" class="page">
+    <h2>Enter Values</h2>
+
+    <input id="func" placeholder="dy/dx = f(x,y) e.g. x+y">
+    <input id="x0" type="number" placeholder="Initial x (x0)">
+    <input id="y0" type="number" placeholder="Initial y (y0)">
+    <input id="h" type="number" placeholder="Step size (h)">
+    <input id="n" type="number" placeholder="Number of steps">
+
+    <button onclick="start()">Calculate</button>
+    <p id="error"></p>
+</div>
+
+<div id="outputPage" class="page">
+    <h2>Steps</h2>
+    <div id="boxes"></div>
+    <button onclick="nextStep()">Next ➡</button>
+</div>
+
+<div id="finalPage"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
